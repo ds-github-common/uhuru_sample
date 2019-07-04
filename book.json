@@ -1,0 +1,39 @@
+{
+  "root": "book/",
+  "language": "ja", 
+  "title": "enebular 操作マニュアル",
+  "plugins":[
+    "-sharing",
+    "-lunr",
+    "-search",
+    "search-pro-kui",
+    "back-to-top-button",
+    "hide-published-with",  
+    "hints",  
+    "table-cell-merge",
+    "styles-sass-fix",
+    "theme-fexa-japanese",
+    "-theme-default",
+    "theme-default-extended", 
+    "pdf-multi-link"
+  ],
+	"pluginsConfig": {
+		"theme-fexa":{
+			"search-placeholder":"検索文字列を入力", 
+			"logo":"./image/logo.svg", 
+			"favicon": "./book/image/favicon.ico"
+		},
+    "pdf-multi-link": {
+      "base": "book.pdf",
+      "label": "PDF"
+    }
+  },
+  "styles": {
+    "website": "../styles/website.scss",
+    "pdf": "../styles/pdf.scss"
+  },
+  "pdf": {
+    "fontSize": 9 
+  },
+  "sortedBy": "-"
+}

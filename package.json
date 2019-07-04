@@ -1,0 +1,31 @@
+{
+  "name": "ryobi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  },
+  "dependencies": {
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-chapter-numbering": "^1.0.2",
+    "gitbook-plugin-download-pdf-link": "^2.0.0",
+    "gitbook-plugin-hide-published-with": "0.0.1",
+    "gitbook-plugin-hints": "^1.0.2",
+    "gitbook-plugin-insert-logo": "^0.1.5",
+    "gitbook-plugin-pdf-multi-link": "^2.1.0",
+    "gitbook-plugin-search-pro-kui": "^1.0.0",
+    "gitbook-plugin-styles-sass-fix": "^1.1.2",
+    "gitbook-plugin-summary": "^1.0.0",
+    "gitbook-plugin-table-cell-merge": "^1.0.8",
+    "gitbook-plugin-theme-default-extended": "^1.0.0",
+    "gitbook-plugin-theme-fexa-japanese": "^1.0.2",
+    "gitbook-plugin-toc": "0.0.2",
+    "pdf-text-extract": "^1.5.0"
+  },
+  "scripts": {
+    "serve": "cd book && book sm && cd ../ && gitbook serve",
+    "build": "cd book && book sm && cd ../ && gitbook build",
+    "pdf": "cd book && book sm && cd ../ && python pdf.py"
+  }
+}

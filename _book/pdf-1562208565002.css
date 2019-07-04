@@ -1,0 +1,131 @@
+@charset "UTF-8";
+.alert {
+  margin: 2rem 0;
+  padding: 0.5rem 2rem 0.2rem;
+  color: #555;
+  background: #fff; }
+  .alert * {
+    padding: 0; }
+
+.section h1 {
+  color: #0d6ca3; }
+
+.section h2 {
+  font-weight: bold;
+  border-bottom: 2.5px solid #0d6ca3;
+  border-left: 6px solid #0d6ca3;
+  padding: 0.5rem 1rem; }
+
+.section h3 {
+  color: #335;
+  border-bottom: 1.5px solid #335; }
+
+.section h4:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: .8em;
+  height: .8em;
+  margin-right: 0.3em;
+  background: #000; }
+
+span.chapter {
+  padding-right: .5em; }
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif !important; }
+
+th {
+  background: #989898;
+  color: #fff;
+  border: 1px solid red !important; }
+
+td {
+  background: #fff;
+  border: 1px solid red !important; }
+
+.page .section hr {
+  margin: 0;
+  background-color: initial;
+  counter-reset: item; }
+
+img {
+  padding: 1rem 0; }
+
+ol {
+  list-style-type: none; }
+
+ol > li:before {
+  content: counter(item) ".";
+  padding-right: .5rem;
+  font-weight: bold;
+  font-size: 1.4rem; }
+
+ol > li {
+  counter-increment: item;
+  margin: 1rem 0 .5rem  -1.5rem;
+  text-indent: -1.8rem;
+  padding-left: 1.8rem; }
+  ol > li div {
+    text-indent: 0; }
+
+ol > li > p:first-child {
+  display: inline; }
+
+td .alert {
+  margin: 1rem; }
+
+.alert-info .hints-container:before {
+  content: "メモ";
+  padding: .5rem .5rem .5rem 0;
+  font-weight: bold;
+  color: #31708f; }
+
+.alert-info {
+  border: 1px solid #31708f;
+  background: #f9fcfd; }
+
+.alert-danger .hints-container:before {
+  content: "注意";
+  padding: .5rem .5rem .5rem 0;
+  font-weight: bold;
+  color: #a94442; }
+
+.alert-danger {
+  border: 1px solid #a94442;
+  background: #f9f2f2; }
+
+ol ul {
+  list-style-type: disc;
+  text-indent: 0; }
+
+.toc ol {
+  list-style-type: decimal; }
+
+.toc ol > li:before {
+  content: initial; }
+
+li span.page {
+  right: 0;
+  text-align: right; }
+
+.toc a {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+  flex-wrap: wrap; }
+
+.toc p {
+  width: 100%; }
+
+.toc .h2 {
+  margin-left: 1em; }
+
+.toc .h3 {
+  margin-left: 2em; }
+
+.toc .title {
+  color: #0d6ca3;
+  font-size: 4rem;
+  margin-top: 0;
+  text-align: center; }
